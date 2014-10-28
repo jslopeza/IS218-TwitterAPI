@@ -15,5 +15,11 @@
 				echo $arrays->ids[$i] . '<br><br>';
 			}
 		}
+
+		public static function printSuccess($arrays){
+			if(!empty($arrays)){
+				echo '<h2>Status Successfully posted<h2>';
+			}
+		}
 	}
  ?>
