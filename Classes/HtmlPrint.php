@@ -2,7 +2,7 @@
 
 	namespace Classes;
 	
-	class HtmlPrint {
+	class HtmlPrint implements \Interfaces\HtmlPrint {
 		public static function printStatuses(Array $arrays){
 			foreach ($arrays as $array) {
 				echo $array->text . '<br><br>';

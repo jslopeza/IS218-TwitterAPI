@@ -5,7 +5,7 @@ namespace Classes;
 /**
 * 
 */
-class TwitterFunctionality {
+class TwitterFunctionality implements \Interfaces\TwitterFunctionality {
 	
 	public static function getField($getfield, $url, $requestMethod){
 		$twitter = Credentials::authenticate();
