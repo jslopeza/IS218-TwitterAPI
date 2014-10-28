@@ -14,6 +14,14 @@ class TwitterFunctionality {
 		$response = $twitter->performRequest();
 		return json_decode($response);
 	}
+
+	public static function postField($postfield, $url, $requestMethod){
+		$twitter = Credentials::authenticate();
+		$twitter->setPostfields($postfield);
+		$twitter->buildOauth($url, $requestMethod);
+		$response = $twitter->performRequest();
+		return json_decode($response);
+	}
 }
 
  ?>
